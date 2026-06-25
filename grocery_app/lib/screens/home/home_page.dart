@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:grocery_app/screens/home/widgets/search_feild.dart';
+import 'package:grocery_app/core/widget/search_feild.dart';
 import 'package:grocery_app/screens/home/widgets/home_header.dart';
 import 'package:grocery_app/screens/home/widgets/exclusive_offer_lisrview.dart';
 import 'package:grocery_app/screens/home/widgets/see_all_row.dart';

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:grocery_app/screens/home/home_page.dart';
 import 'package:grocery_app/screens/login/login_page.dart';
-import 'package:grocery_app/screens/Signup/widget/button.dart';
+import 'package:grocery_app/core/widget/button.dart';
 
 class SignUp extends StatelessWidget {
   const SignUp({super.key});

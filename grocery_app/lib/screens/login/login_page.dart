@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:grocery_app/screens/Signup/sign_up.dart';
-import 'package:grocery_app/screens/Signup/widget/button.dart';
+import 'package:grocery_app/core/widget/button.dart';
 import 'package:grocery_app/screens/home/home_page.dart';
 
 class LoginPage extends StatelessWidget {

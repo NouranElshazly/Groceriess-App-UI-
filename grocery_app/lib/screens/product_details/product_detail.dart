@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:grocery_app/screens/product_details/widgets/product_details_header.dart';
 import 'package:grocery_app/screens/product_details/widgets/expandable.dart';
-import 'package:grocery_app/screens/Signup/widget/button.dart';
+import 'package:grocery_app/core/widget/button.dart';
 
 class ProductDetail extends StatelessWidget {
   const ProductDetail({super.key});
