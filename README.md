@@ -11,7 +11,7 @@ A modern grocery shopping app for fresh produce built using Flutter. GreenMart p
   <img src="/screenshots/login.png" width="45%" />
 </p>
 <p float="left">
-  <img src="/screenshots/home_01.png" width="45%" />
+  <img src="/screenshots/homewithswiper.png" width="45%" />
   <img src="/screenshots/home_02.png" width="45%" />
 </p>
 <p float="left">
@@ -32,7 +32,18 @@ A modern grocery shopping app for fresh produce built using Flutter. GreenMart p
   
 
 </p>
+<p float="left">
+  <img src="/screenshots/checkout_model.png" width="45%" />
+  <img src="/screenshots/order_accepted.png" width="45%" />
+  
 
+</p>
+<p float="left">
+  <img src="/screenshots/filter.png" width="45%" />
+  <img src="/screenshots/error.png" width="45%" />
+  
+
+</p>
 ## 🚀 Features
 - Clean and intuitive splash screen
 - Welcome screen with engaging UI
