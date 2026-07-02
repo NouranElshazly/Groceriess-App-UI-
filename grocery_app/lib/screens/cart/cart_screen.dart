@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:grocery_app/screens/cart/widget/cart_list_view.dart';
+import 'package:grocery_app/screens/cart/widget/checkout_bottom_sheet.dart';
 
 class CartScreen extends StatelessWidget {
   const CartScreen({super.key});
+
+  static const String totalCost = '12.96\$';
 
   @override
   Widget build(BuildContext context) {
@@ -24,35 +27,47 @@ class CartScreen extends StatelessWidget {
             const SizedBox(height: 16),
             Padding(
               padding: const EdgeInsets.all(20.0),
-              child: Container(
-                padding: const EdgeInsets.symmetric(
-                  horizontal: 20,
-                  vertical: 16,
-                ),
-                decoration: BoxDecoration(
-                  color: const Color(0xff53B175),
-                  borderRadius: BorderRadius.circular(18),
-                ),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: const [
-                    Text(
-                      'Go to Checkout',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 18,
-                        fontWeight: FontWeight.w600,
+              child: InkWell(
+                borderRadius: BorderRadius.circular(18),
+                onTap: () {
+                  showModalBottomSheet(
+                    context: context,
+                    isScrollControlled: true,
+                    backgroundColor: Colors.transparent,
+                    builder: (_) =>
+                        const CheckoutBottomSheet(totalCost: totalCost),
+                  );
+                },
+                child: Container(
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 20,
+                    vertical: 16,
+                  ),
+                  decoration: BoxDecoration(
+                    color: const Color(0xff53B175),
+                    borderRadius: BorderRadius.circular(18),
+                  ),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: const [
+                      Text(
+                        'Go to Checkout',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 18,
+                          fontWeight: FontWeight.w600,
+                        ),
                       ),
-                    ),
-                    Text(
-                      ' 12.96\$',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 16,
-                        fontWeight: FontWeight.w600,
+                      Text(
+                        ' 12.96\$',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 16,
+                          fontWeight: FontWeight.w600,
+                        ),
                       ),
-                    ),
-                  ],
+                    ],
+                  ),
                 ),
               ),
             ),

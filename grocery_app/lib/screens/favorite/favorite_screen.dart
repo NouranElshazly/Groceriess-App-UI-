@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:grocery_app/core/widget/button.dart';
+import 'package:grocery_app/screens/cart/widget/order_failed_dialog.dart';
 import 'package:grocery_app/screens/favorite/favorite_list_view.dart';
 
 class FavoriteScreen extends StatelessWidget {
@@ -22,7 +23,15 @@ class FavoriteScreen extends StatelessWidget {
           children: [
             const Expanded(child: FavoriteListView()),
             const SizedBox(height: 16),
-            Button(text: 'Add All To Cart '),
+            Button(
+              text: 'Add All To Cart ',
+              onTap: () {
+                showDialog(
+                  context: context,
+                  builder: (_) => const OrderFailedDialog(),
+                );
+              },
+            ),
           ],
         ),
       ),

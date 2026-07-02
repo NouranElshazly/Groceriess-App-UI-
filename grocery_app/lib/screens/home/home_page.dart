@@ -4,6 +4,7 @@ import 'package:grocery_app/screens/home/widgets/home_header.dart';
 import 'package:grocery_app/screens/home/widgets/exclusive_offer_lisrview.dart';
 import 'package:grocery_app/screens/home/widgets/see_all_row.dart';
 import 'package:grocery_app/screens/home/widgets/groceries_listview.dart';
+import 'package:grocery_app/screens/home/widgets/home_slider.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -20,6 +21,8 @@ class HomePage extends StatelessWidget {
               HomeHeader(),
               SizedBox(height: 20),
               SearchFeild(),
+              SizedBox(height: 20),
+              HomeSlider(),
               SizedBox(height: 20),
               SeeAllRow(title: "Exclusive Offer"),
               SizedBox(height: 20),

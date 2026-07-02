@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:grocery_app/core/widget/search_feild.dart';
+import 'package:grocery_app/screens/explore/filters_screen.dart';
 import 'package:grocery_app/screens/explore/widget/explore_list_view.dart';
 
 class ExploreScreen extends StatelessWidget {
@@ -21,7 +22,14 @@ class ExploreScreen extends StatelessWidget {
         child: ListView(
           children: [
             SizedBox(height: 30),
-            SearchFeild(),
+            SearchFeild(
+              onFilterTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (_) => const FiltersScreen()),
+                );
+              },
+            ),
             SizedBox(height: 20),
             ExploreListView(),
             SizedBox(height: 15),
